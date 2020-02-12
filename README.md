@@ -43,8 +43,22 @@ to run commands against your Kubernetes clusters, install and setup [kubectl](ht
 >_tip_: to run your cluster locally, port-forward the frontend service `kubectl port-forward service/frontend 8100:8100` and the reverseproxy service `kubectl port-forward service/reverseroxy 8080:8080`, you can view it in your browser at `localhost:8100` for the frontend and `localhost:8080` for the reverse proxy exposing the rest api
 5. to deploy a new version of the feed microservice run `kubectl apply -f backend-feed-deployment.yaml,backend-feed-service.yaml`
 
+kubectl get pod screenshot
+![CI](./screenshot/kubectl-get-pod.png "kubectl get pod screenshot")
+
 ***
 
 ### Travis
 this project use Travis Ci to build the application.
+CI screenshot
+![CI](./screenshot/travis-ci-1.png "screenshot 1")
+![CI](./screenshot/travis-ci-2.png "screenshot 2")
+![CI](./screenshot/travis-ci-4.png "screenshot 4")
+***
+
+### App screenshot
+CI screenshot
+![CI](./screenshot/app-screenshot-1.png "screenshot 1")
+![CI](./screenshot/app-screenshot-2.png "screenshot 2")
+![CI](./screenshot/app-screenshot-3.png "screenshot 3")
 ***
